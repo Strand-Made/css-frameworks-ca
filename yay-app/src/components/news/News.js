@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Footer from "../Footer";
-import MyCard from "./card/MyCard";
+import NewsCards from "./news-cards/NewsCards"
 
 const News = () => {
   return (
@@ -16,11 +16,8 @@ const News = () => {
         <BrowsePages />
         <Row>
           <Col className="card-container">
-            <MyCard
-              title="Card Heading"
-              text="Some real creative text for a nice card"
-              buttonText="More"
-            ></MyCard>
+            <NewsCards/>
+           
           </Col>
         </Row>
 

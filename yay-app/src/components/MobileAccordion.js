@@ -29,7 +29,7 @@ const MobileAccordion = () => {
               condimentum mattis rhoncus.
             </Card.Text>
             <Card.Img className="accordion-card__img" src={tabImage1} />
-            <div ClassName="accordion-card-links">
+            <div ClassName="mt-5 accordion-card-links">
               <Card.Link href="#">Share</Card.Link>
               <Card.Link href="#">
                 <FontAwesomeIcon
@@ -99,7 +99,7 @@ const MobileAccordion = () => {
               condimentum mattis rhoncus.
             </Card.Text>
             <Card.Img className="accordion-card__img" src={tabImage3} />
-            <div ClassName="accordion-card-links">
+            <div className="accordion-card-links">
               <Card.Link href="#">Share</Card.Link>
               <Card.Link href="#">
                 <FontAwesomeIcon

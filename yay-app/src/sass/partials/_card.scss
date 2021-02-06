@@ -1,13 +1,15 @@
 .accordion-card {
+  &-links{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
   .card-link {
     color: $dark;
   }
 }
 .btn-link {
   color: $dark;
-}
-.accordion-card-links {
-  margin-top: 1rem;
 }
 
 .card {
