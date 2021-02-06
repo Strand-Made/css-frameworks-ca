@@ -1,0 +1,41 @@
+.navbar {
+  background-color: $base-color;
+  .navbar-form {
+    &__input--search {
+      border: none;
+    }
+  }
+  &-nav {
+    &__link {
+      color: $dark;
+      &:hover {
+        text-decoration: none;
+        color: $primary;
+      }
+    }
+  }
+  .active {
+    background-color: $white;
+    border-radius: 5px;
+  }
+  &-toggler {
+    border: none;
+  }
+}
+
+.pagination {
+  .page-item.active .page-link {
+    background-color: $primary;
+    border: $primary;
+  }
+}
+
+.main-footer {
+  background-color: $white;
+  &-list {
+    list-style: none;
+    &__link:first-of-type {
+      margin-right: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+// a {
+//   color: $dark;
+// }
+
+// Hero Carousel selectors
+.carousel-indicators li {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.6rem;
+  border: none;
+  border-radius: 2px;
+  background-color: $white;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.8);
+  opacity: 1;
+  &.active {
+    background-color: $primary;
+  }
+}
+//  Remove carousel arrows
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+// Image control tabs & accordion
+.image-container {
+  &__image {
+    width: 100%;
+  }
+}
+
+// Card Container
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Pagination
+.pagination-container {
+  margin-top: 1rem;
+}

@@ -1,0 +1,19 @@
+/* The following block can be included in a custom.scss */
+
+$primary: #e92569;
+$base-color: #efefef;
+$dark: #0a0a0a;
+
+$base-textColor: #767676;
+
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+  "primary": $primary,
+  "light": $base-color,
+  "dark": $dark,
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

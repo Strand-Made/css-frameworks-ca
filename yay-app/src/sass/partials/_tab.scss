@@ -1,0 +1,20 @@
+.tab-component {
+  .nav-item .nav-link {
+    color: $primary;
+  }
+  .nav-item .nav-link .active {
+    color: $base-textColor;
+  }
+}
+
+.tab-content {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-component,
+  .tab-content {
+    display: none;
+  }
+}
