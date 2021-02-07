@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import tabImage1 from "../images/tab-1.jpg";
 import tabImage2 from "../images/tab-2.jpg";
 import tabImage3 from "../images/tab-3.jpg";
+import  SocialLinks from "./SocialLinks";
 
 const TabComponent = () => {
   return (
@@ -30,6 +31,7 @@ const TabComponent = () => {
               ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed
               condimentum mattis rhoncus.
             </p>
+            < SocialLinks className="card-link"/>
           </Col>
         </Row>
       </Tab>
@@ -49,6 +51,8 @@ const TabComponent = () => {
               ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed
               condimentum mattis rhoncus.
             </p>
+            < SocialLinks className="card-link"/>
+
           </Col>
         </Row>
       </Tab>
@@ -68,6 +72,7 @@ const TabComponent = () => {
               ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed
               condimentum mattis rhoncus.
             </p>
+            < SocialLinks className="card-link"/>
           </Col>
         </Row>
       </Tab>

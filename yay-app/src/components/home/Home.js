@@ -3,9 +3,9 @@ import Container from "react-bootstrap/Container";
 import HeroCarousel from "../HeroCarousel";
 import MobileAccordion from "../MobileAccordion";
 import TabComponent from "../TabComponent";
-import Heading from "../Heading";
-import Paragraph from "../Paragraph";
-import Footer from "../Footer";
+import Heading from "../typography/Heading";
+import Paragraph from "../typography/Paragraph";
+import Footer from "../navigation/Footer";
 
 const Home = () => {
   return (

@@ -5,11 +5,7 @@ import Button from "react-bootstrap/Button";
 import tabImage1 from "../images/tab-1.jpg";
 import tabImage2 from "../images/tab-2.jpg";
 import tabImage3 from "../images/tab-3.jpg";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-library.add(fab);
+import SocialLinks from "./SocialLinks"
 
 const MobileAccordion = () => {
   return (
@@ -29,22 +25,8 @@ const MobileAccordion = () => {
               condimentum mattis rhoncus.
             </Card.Text>
             <Card.Img className="accordion-card__img" src={tabImage1} />
-            <div ClassName="mt-5 accordion-card-links">
-              <Card.Link href="#">Share</Card.Link>
-              <Card.Link href="#">
-                <FontAwesomeIcon
-                  size="2x"
-                  className="accordion-card-links__icons"
-                  icon={["fab", "facebook-f"]}
-                />
-              </Card.Link>
-              <Card.Link href="#">
-                <FontAwesomeIcon
-                  size="2x"
-                  className="accordion-card-links__icons"
-                  icon={["fab", "twitter"]}
-                />
-              </Card.Link>
+            <div className="mt-5 accordion-card-links">
+              <SocialLinks className="card-link" />
             </div>
           </Card.Body>
         </Accordion.Collapse>
@@ -64,22 +46,8 @@ const MobileAccordion = () => {
               condimentum mattis rhoncus.
             </Card.Text>
             <Card.Img className="accordion-card__img" src={tabImage2} />
-            <div ClassName="accordion-card-links">
-              <Card.Link href="#">Share</Card.Link>
-              <Card.Link href="#">
-                <FontAwesomeIcon
-                  size="2x"
-                  className="accordion-card-links__icons"
-                  icon={["fab", "facebook-f"]}
-                />
-              </Card.Link>
-              <Card.Link href="#">
-                <FontAwesomeIcon
-                  size="2x"
-                  className="accordion-card-links__icons"
-                  icon={["fab", "twitter"]}
-                />
-              </Card.Link>
+            <div className="accordion-card-links">
+              <SocialLinks className="card-link"/>
             </div>
           </Card.Body>
         </Accordion.Collapse>
@@ -100,21 +68,7 @@ const MobileAccordion = () => {
             </Card.Text>
             <Card.Img className="accordion-card__img" src={tabImage3} />
             <div className="accordion-card-links">
-              <Card.Link href="#">Share</Card.Link>
-              <Card.Link href="#">
-                <FontAwesomeIcon
-                  size="2x"
-                  className="accordion-card-links__icons"
-                  icon={["fab", "facebook-f"]}
-                />
-              </Card.Link>
-              <Card.Link href="#">
-                <FontAwesomeIcon
-                  size="2x"
-                  className="accordion-card-links__icons"
-                  icon={["fab", "twitter"]}
-                />
-              </Card.Link>
+             <SocialLinks  className="card-link"/>
             </div>
           </Card.Body>
         </Accordion.Collapse>

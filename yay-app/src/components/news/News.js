@@ -1,11 +1,12 @@
 import React from "react";
-import BrowsePages from "../BrowsePages";
-import Heading from "../Heading";
+import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Footer from "../Footer";
-import NewsCards from "./news-cards/NewsCards"
+import BrowsePages from "../navigation/BrowsePages";
+import Footer from "../navigation/Footer";
+import Heading from "../typography/Heading";
+import NewsCards from "./news-cards/NewsCards";
+
 
 const News = () => {
   return (
@@ -15,7 +16,7 @@ const News = () => {
 
         <BrowsePages />
         <Row>
-          <Col className="card-container">
+          <Col className="card-container d-flex flex-wrap">
             <NewsCards/>
            
           </Col>

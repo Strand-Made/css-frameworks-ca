@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -11,9 +10,10 @@ library.add(fab);
 const Footer = () => {
   return (
     <footer className="main-footer mt-5">
-      <Container className="main-footer-container md-flex md-flex-row justify-content-md-between">
-        <Row className="justify-content-center d-flex align-items-md-end">
-          <ul className="footer-nav d-flex align-items-center flex-md-row-reverse  main-footer-list">
+      <div className="d-flex p-3  main-footer-container">
+        <Row className="mx-2 w-100">
+          <Col className="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-start align-content-lg-end" >
+          <ul className="footer-nav d-flex align-items-center  main-footer-list mb-lg-0">
             <li>
               <a
                 className="main-footer-list__link"
@@ -31,10 +31,8 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </Row>
-
-        <Row className="main-footer-extra">
-          <Col className="d-flex justify-content-between">
+          </Col>
+          <Col className="d-flex align-self-end align-self-lg-center">
             <div className="main-footer-email">
               <a
                 className="main-footer-email__link"
@@ -43,12 +41,15 @@ const Footer = () => {
                 hello@yay.com
               </a>
             </div>
+            </Col>
+
+            <Col className="d-flex justify-content-end align-self-end align-self-lg-center">
             <div className="main-footer-copyright">
-              <p>Copyright 2020</p>
+              Copyright 2020
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </footer>
   );
 };

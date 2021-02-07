@@ -1,25 +1,26 @@
 import React from "react";
-import Heading from "../Heading";
-import Footer from "../Footer";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ContactForm from "../form/ContactForm"
-import ContactInfo from "./contact-info/ContactInfo"
+import Container from "react-bootstrap/Container";
+import Footer from "../navigation/Footer";
+import ContactForm from "../form/ContactForm";
+import Heading from "../typography/Heading";
+import ContactInfo from "./contact-info/ContactInfo";
 
 const Contact = () => {
   return (
     <>
       <Container fluid>
-        <Col className="col-7 contact-info">
+        <div className=" d-md-flex flex-row mt-3">
+        <Col className="col order-2 mt-md-5 contact-info-container">
         <ContactInfo/>
 
         </Col>
 
-        <Col className="welcome mt-5">
+        <Col className="welcome order-1">
           <Heading content="Submit your details" />
           <ContactForm/>
         </Col>
+        </div>
       </Container>
       <Footer />
     </>

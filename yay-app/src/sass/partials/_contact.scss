@@ -1,0 +1,28 @@
+.contact-list {
+    &-li{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        p{
+            margin-bottom: 0;
+        }
+
+        svg {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.website__input {
+    background-color: $light-2;
+    color: $white;
+}
+
+.contact-form {
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px hsla(0, 0%, 0%, 0.2);
+    &__submit-btn{
+        background-color: $base-textColor;
+    }
+}

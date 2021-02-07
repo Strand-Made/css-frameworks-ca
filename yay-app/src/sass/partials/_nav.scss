@@ -24,9 +24,13 @@
 }
 
 .pagination {
+  .page-link {
+    border: 1px solid $primary;
+    color: $primary;
+  }
   .page-item.active .page-link {
     background-color: $primary;
-    border: $primary;
+    color: $white;
   }
 }
 

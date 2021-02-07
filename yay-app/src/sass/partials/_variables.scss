@@ -3,7 +3,17 @@ $base-color: #efefef;
 $base-textColor: #767676;
 $primary: #e92569;
 $dark: #0a0a0a;
+$light-2: #C7C7C7;
+
+$theme-colors: (
+  "primary": $primary,
+  "light": $base-color,
+  "dark": $dark,
+);
+
 
 // Text
 $font-family-base: "Lato", sans-serif;
 $font-family-heading: "Playfair Display", serif;
+
+@import "~bootstrap/scss/bootstrap";

@@ -14,7 +14,7 @@ for (let number = 1; number <= 4; number++) {
 const BrowsePages = () => {
   return (
     <div className="pagination-container">
-      <Pagination size="sm">{items}</Pagination>
+      <Pagination size="md">{items}</Pagination>
     </div>
   );
 };

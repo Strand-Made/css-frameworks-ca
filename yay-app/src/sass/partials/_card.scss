@@ -1,12 +1,13 @@
 .accordion-card {
   &-links{
-    display: flex;
-    align-items: center;
-    margin-top: 0.5rem;
+    display: flex !important;
+    align-items: center !important;
+    margin-top: 0.5rem !important;
   }
-  .card-link {
-    color: $dark;
-  }
+}
+.card-link {
+  color: $dark;
+  text-transform: uppercase;
 }
 .btn-link {
   color: $dark;
@@ -14,7 +15,6 @@
 
 .card {
   border-radius: 10px;
-  width: 25rem;
   &__button {
     position: relative;
     border: none;
@@ -31,5 +31,21 @@
       border-bottom-right-radius: inherit;
       background-color: $base-textColor;
     }
+  }
+  &-header {
+    background-color: $white;
+    border-bottom: 1px solid $primary;
+  }
+}
+
+.news-card {
+  margin: 1rem;
+}
+
+
+// Media queries 
+@media screen and (min-width: 992px) {
+  .news-card {
+    width: 25%;
   }
 }
